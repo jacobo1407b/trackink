@@ -80,7 +80,7 @@ BEGIN
             TABLE ( xmlsequence(extract(xmltype.createxml(l_xml), '/')) ) trackid;
 
         DELETE FROM XXITG_SHIPPING_TRACKING WHERE ID_TRACKING = v_id_tracking;
-
+        COMMIT;
         INSERT INTO XXITG_SHIPPING_TRACKING (
            ID_TRACKING,
            NUM_TRACKING,

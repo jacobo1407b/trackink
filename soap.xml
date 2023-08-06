@@ -1,0 +1,11 @@
+<Policy xmlns="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="wss_username_token_service_policy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+		<Policy>
+			<UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+				<Policy>
+					<WssUsernameToken10 />
+				</Policy>
+			</UsernameToken>
+		</Policy>
+	</SupportingTokens>
+</Policy>
